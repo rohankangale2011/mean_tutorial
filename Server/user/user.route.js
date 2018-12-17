@@ -23,4 +23,9 @@ module.exports = function (app) {
         });
     });
 
+    app.post('/webhook', function(req,res) {
+        console.log('REQ:', req);
+        res.json({ success: true, message: 'Webhook response success' });
+    });
+
 }
