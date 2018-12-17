@@ -15,7 +15,7 @@ app.use(function(req, res, next) {
 
 require("./user/user.route")(app);
 
-app.listen(3002, function() {
+app.listen(process.env.PORT || 3002, function() {
     console.log("Listening on port 3002...");
 });
 
